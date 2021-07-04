@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Flexbox Helper</title>
+    <meta
+      name="description"
+      content="A tool to help with Flexbox properties."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Brandi Cameron | hello@brandicameron.com" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <h1>Flexbox Helper</h1>
+  <div class="settings">
+    <p>flex-direction: <span class="flex-direction">row</span>;</p>
+    <p>justify-content: <span class="justify-content">center</span>;</p>
+    <p>align-items: <span class="align-items">stretch</span>;</p>
+  </div>
+
+  <main>
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+    </div>
+    <div class="controls">
+      <div class="button-group" data-prop="flexDirection">
+        <button value="row">flex-direction: row</button>
+        <button value="column">flex-direction: column</button>
+      </div>
+      <div class="button-group" data-prop="justifyContent">
+        <button value="center">justify-content: center</button>
+        <button value="flex-start">justify-content: flex-start</button>
+        <button value="flex-end">justify-content: flex-end</button>
+        <button value="space-around">justify-content: space-around</button>
+        <button value="space-between">justify-content: space-between</button>
+        <button value="space-evenly">justify-content: space-evenly</button>
+        <button value="stretch">justify-content: stretch</button>
+      </div>
+      <div class="button-group" data-prop="alignItems">
+        <button value="stretch">align-items: stretch</button>
+        <button value="center">align-items: center</button>
+        <button value="flex-start">align-items: flex-start</button>
+        <button value="flex-end">align-items: flex-end</button>
+      </div>
+    </div>
+  </main>
+
+  <body>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/Flip.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

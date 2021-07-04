@@ -12,23 +12,20 @@ main {
   height: 100%;
 }
 
-h1 {
+h1,
+h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: lighter;
+  font-weight: normal;
   height: 5vh;
 }
 
 .current-settings {
-  display: flex;
-  flex-direction: column;
-  /* justify-content: space-between; */
-  align-content: center;
-  width: 95vw;
-  max-width: 900px;
+  width: 350px;
   margin: 0 auto 30px auto;
-  flex-wrap: wrap;
+  border: 1px dotted grey;
+  padding: 10px 15px;
 }
 
 .current-settings p {
@@ -75,19 +72,18 @@ h1 {
 }
 
 .button-group {
-  display: flex;
-  flex-direction: column;
-  margin: 15px 0;
+  width: 35vw;
+  margin: 5px 0 30px 0;
 }
 
 button {
   text-align: left;
   padding: 0 10px;
-  /* height: 35px; */
-  height: 3.6vh;
+  width: 150px;
+  height: 30px;
   border: none;
   border-radius: 15px;
-  margin: 5px 0;
+  margin: 5px;
   cursor: pointer;
 }
 
@@ -99,30 +95,30 @@ button:active {
   transform: scale(0.98);
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 950px) {
   main {
     flex-direction: column;
   }
 
   .container {
-    height: 20vh;
+    height: 25vh;
     width: 70vw;
   }
 
   .controls {
-    margin: 20px;
-  }
-
-  .button-group {
-    margin: 7px 0;
+    margin-top: 20px;
   }
 
   .item {
     padding: 5px;
   }
 
+  .button-group {
+    width: 90vw;
+    margin: 5px 0 20px 0;
+  }
+
   button {
-    height: 25px;
-    padding: 0 10px;
+    height: 40px;
   }
 }

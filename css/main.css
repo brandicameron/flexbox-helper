@@ -8,7 +8,7 @@
 main {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   height: 100%;
 }
 
@@ -39,7 +39,7 @@ h2 {
   flex-direction: row;
   justify-content: center;
   align-items: stretch;
-  border: 1px solid #222;
+  border: 1px dotted #222;
 }
 
 .item {
@@ -66,29 +66,32 @@ h2 {
 }
 
 .controls {
-  display: flex;
-  flex-direction: column;
   margin: 0 20px;
 }
 
 .button-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 35vw;
   margin: 5px 0 30px 0;
 }
 
 button {
-  text-align: left;
+  text-align: center;
   padding: 0 10px;
   width: 150px;
-  height: 30px;
-  border: none;
+  height: 35px;
   border-radius: 15px;
   margin: 5px;
   cursor: pointer;
+  background: #fff;
+  border: 1px dotted grey;
 }
 
 button:hover {
   transform: scale(0.99);
+  background: lavender;
 }
 
 button:active {
@@ -101,8 +104,9 @@ button:active {
   }
 
   .container {
-    height: 25vh;
-    width: 70vw;
+    height: 275px;
+    width: 85vw;
+    margin: 0 auto;
   }
 
   .controls {
